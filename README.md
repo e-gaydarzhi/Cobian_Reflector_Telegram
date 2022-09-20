@@ -1,25 +1,24 @@
 # CobianBackupTelegram
 
-This is a console program that is used to send notifications to telegrams about unsuccessful backups.
-The code is written entirely in c# .Net Framework 4.6
-To use, open the project in Visual Studio and change the "BotID" and "BotChatID" lines
+This is a console program for Windows, that is used to send notifications to telegrams about unsuccessful backups. The code is written entirely in c# .Net Framework 4.6 The program does not affect the Cobian Reflector service, does not change the files of the current (active) log.
 
-The program does not affect the Cobian Backup service, does not change the files of the current (active) log.
+[Release For Windows](https://github.com/e-gaydarzhi-2077/Cobian_Reflector_Telegram/releases/tag/v1.0)
 
 Example:
-![image](https://user-images.githubusercontent.com/107859162/190390771-3025e227-589b-4b5d-853a-3af6be55adce.png)
+![image](https://user-images.githubusercontent.com/107859162/191241057-3c8876c5-0f69-46f4-9ca4-7f549bf2250c.png)
 
-
-Find these lines
-```
-string BotID = "6497324784:A47WeRqkc457frtIT5Qut4Qz6CfetFe489c";
-string BotChatID = "-71554284";
-```
-You need to change the data inside the quotes
+After you have downloaded and extracted the files, you need to modify the ```CobianReflectorTG.cfg``` file
+Line 0 is the bot's api token
+Line 1 is the group id
+(Note the group id is written with a - sign)
+(Id of personal correspondence is written without this sig)
 
 Example:
-![image](https://user-images.githubusercontent.com/107859162/190393047-fafa81bc-a747-40e3-b080-7841a4b3f7cf.png)
+![image](https://user-images.githubusercontent.com/107859162/191242438-9e199706-2d0d-414f-a027-6194cc7894e1.png)
 
+Then add a finishing action (To the last task)
+Run ```CobianReflectorTG.exe```
 
-After you have managed to compile the console program, you must install it in cobian backup so that it will be executed when the task is completed.
-![image](https://user-images.githubusercontent.com/107859162/190393595-72d7baab-d8b2-4c62-98dd-44d180870008.png)
+Example:
+![image](https://user-images.githubusercontent.com/107859162/191242909-678be467-401b-496d-b97f-4ecd154c53d7.png)
+
