@@ -2,7 +2,7 @@
 
 This is a console program for Windows, that is used to send notifications to telegrams about unsuccessful backups. The code is written entirely in c# .Net Framework 4.6 The program does not affect the Cobian Reflector service, does not change the files of the current (active) log.
 
-[Release For Windows](https://github.com/e-gaydarzhi-2077/Cobian_Reflector_Telegram/releases/tag/v1.0)
+[Release For Windows](https://github.com/e-gaydarzhi-2077/Cobian_Reflector_Telegram/releases)
 
 Example:
 ![image](https://user-images.githubusercontent.com/107859162/191241057-3c8876c5-0f69-46f4-9ca4-7f549bf2250c.png)
