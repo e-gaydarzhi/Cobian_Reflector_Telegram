@@ -1,0 +1,6 @@
+D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\bin\Debug\CobianReflectorTG.exe.config
+D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\bin\Debug\CobianReflectorTG.exe
+D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\bin\Debug\CobianReflectorTG.pdb
+D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Debug\CobianReflectorTG.csproj.CoreCompileInputs.cache
+D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Debug\CobianReflectorTG.exe
+D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Debug\CobianReflectorTG.pdb

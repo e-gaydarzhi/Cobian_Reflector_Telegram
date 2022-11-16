@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CobianReflectorTG
 {
@@ -12,23 +9,23 @@ namespace CobianReflectorTG
     {
         static void Main(string[] args)
         {
-
             //Vars
+            string DirExe = System.Reflection.Assembly.GetExecutingAssembly().Location;
             string DateNow = DateTime.Now.ToString("yyyy-MM-dd");
             string PathLog = "C:\\Program Files\\Cobian Reflector\\Logs\\";
             string PathLogTemp = "C:\\Program Files\\Cobian Reflector\\Logs\\temp\\";
-            string BotID = File.ReadLines(System.Environment.CurrentDirectory + "\\CobianReflectorTG.cfg").ElementAtOrDefault(0);
-            string BotChatID = File.ReadLines(System.Environment.CurrentDirectory + "\\CobianReflectorTG.cfg").ElementAtOrDefault(1);
+            string BotID = File.ReadLines(Path.GetDirectoryName(DirExe) + "\\CobianReflectorTG.cfg").ElementAtOrDefault(0);
+            string BotChatID = File.ReadLines(Path.GetDirectoryName(DirExe) + "\\CobianReflectorTG.cfg").ElementAtOrDefault(1);
 
             //Create Temp if not exist
-            System.IO.Directory.CreateDirectory(PathLogTemp);
+            Directory.CreateDirectory(PathLogTemp);
 
             if (File.Exists(PathLog + "Cobian Reflector " + DateNow + ".txt"))
             {
                 Console.WriteLine("File exists");
 
                 //Copy Opened File
-                System.IO.File.Copy(PathLog + "Cobian Reflector " + DateNow + ".txt", PathLogTemp + "Cobian Reflector " + DateNow + ".txt", true);
+                File.Copy(PathLog + "Cobian Reflector " + DateNow + ".txt", PathLogTemp + "Cobian Reflector " + DateNow + ".txt", true);
 
                 //Get Public IP
                 string externalIpString = new WebClient().DownloadString("http://icanhazip.com").Replace("\\r\\n", "").Replace("\\n", "").Trim();
@@ -48,13 +45,21 @@ namespace CobianReflectorTG
                     }
                     else
                     {
-                        //Send result in Telegram
-                        string GetBot = "Ошибка Cobian Reflector ⚠️ " + "\n" + "Пользователь: " + Environment.UserName + "\n" + "Компьютер: " + Environment.MachineName + "\n" + "IP-Адресс: " + externalIp.ToString() + "\n" + "`" + result + "`";
-                        System.Net.WebRequest reqGET = System.Net.WebRequest.Create(@"https://api.telegram.org/bot" + BotID + "/sendMessage?chat_id=" + BotChatID + "&parse_mode=Markdown&text=" + GetBot);
-                        System.Net.WebResponse resp = reqGET.GetResponse();
-                        System.IO.Stream stream = resp.GetResponseStream();
-                        System.IO.StreamReader sr = new System.IO.StreamReader(stream);
-                        Console.WriteLine("Errors not finded");
+                        //Check results if have upper characters contains
+                        if (!result.Contains("ERR"))
+                        {
+                            Console.WriteLine("ERR: " + result.Contains("ERR") + "!");
+                        }
+                        else
+                        {
+                            //Send result in Telegram
+                            string GetBot = "Error Cobian Reflector ⚠️ " + "\n" + "User: " + Environment.UserName + "\n" + "Computer: " + Environment.MachineName + "\n" + "IP-Adress: " + externalIp.ToString() + "\n" + "`" + result + "`";
+                            WebRequest reqGET = WebRequest.Create(@"https://api.telegram.org/bot" + BotID + "/sendMessage?chat_id=" + BotChatID + "&parse_mode=Markdown&text=" + GetBot);
+                            WebResponse resp = reqGET.GetResponse();
+                            Stream stream = resp.GetResponseStream();
+                            StreamReader sr = new StreamReader(stream);
+                            Console.WriteLine("Errors not finded");
+                        }
                     }
                 }
                 catch
@@ -64,7 +69,8 @@ namespace CobianReflectorTG
                 finally
                 {
                     //Delete temp file and exit
-                    System.IO.File.Delete(PathLogTemp + "Cobian Reflector " + DateNow + ".txt");
+                    File.Delete(PathLogTemp + "Cobian Reflector " + DateNow + ".txt");
+                    Directory.GetFiles(PathLogTemp).ToList().ForEach(File.Delete);
                     Environment.Exit(0);
                 }
             }
