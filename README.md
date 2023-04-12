@@ -9,5 +9,6 @@ You need to run it, specify api key and chat id
 
 ![2023-04-12 11_36_09-Temp](https://user-images.githubusercontent.com/107859162/231402924-2e6e492a-5845-4711-98c0-6991572556d2.png)
 
-After the application finishes its work on finding errors, a notification should come to your telegram chat as shown in the screenshot below:
+After the application finishes its work on finding errors,
+a notification should come to your telegram chat as shown in the screenshot below:
 ![2023_04_12_11_45_18_Mirvari_Backup_Eugene_44782_](https://user-images.githubusercontent.com/107859162/231404399-e7cfc2c9-4aac-491d-b0f6-fb8a83a47ca6.png)
