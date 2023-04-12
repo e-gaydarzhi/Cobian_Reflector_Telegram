@@ -4,6 +4,8 @@ This is a console program for Windows, that is used to send notifications to tel
 
 [Release For Windows](https://github.com/e-gaydarzhi-2077/Cobian_Reflector_Telegram/releases)
 
+After update 1.3, the api key and chat id are now encrypted.
+
 Application launch example:
 You need to run it, specify api key and chat id
 
