@@ -4,4 +4,3 @@ D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\bin\R
 D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Release\CobianReflectorTG.csproj.CoreCompileInputs.cache
 D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Release\CobianReflectorTG.exe
 D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Release\CobianReflectorTG.pdb
-D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Release\CobianReflectorTG.csproj.AssemblyReference.cache

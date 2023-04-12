@@ -24,6 +24,7 @@ namespace CobianReflectorTG
             }
             else
             {
+                //Add settings and crypt to file
                 Console.WriteLine("Enter api key for telegram bot:");
                 String StringApi = Console.ReadLine();
                 Console.WriteLine("Enter chat id for telegram bot");
@@ -90,7 +91,6 @@ namespace CobianReflectorTG
                 }
                 //Delete temp file and exit
                 Directory.GetFiles(PathLogTemp).ToList().ForEach(File.Delete);
-
             }
         }
 
@@ -98,10 +98,8 @@ namespace CobianReflectorTG
         {
             SettingsBot decryptBot = new SettingsBot();
             decryptBot.Decrypt();
-
             string string1 = decryptBot.DecryptedString1;
             string string2 = decryptBot.DecryptedString2;
-
 
             string externalIp = GetExternalIp();
             string VarData = "Cobian Reflector Error⚠️" + "\n" + "User: " + Environment.UserName + "\n" + "Computer: " + Environment.MachineName + "\n" + "Time: " + DateTime.Now + "\n" + "Ip-Adress: " + externalIp + "\n" + hdd() + "\n" + "Error found: " + ErrorCount + "\n" + "`" + ErrorDetails + "`";
