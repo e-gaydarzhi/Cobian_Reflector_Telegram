@@ -12,3 +12,5 @@ You need to run it, specify api key and chat id
 After the application finishes its work on finding errors,
 a notification should come to your telegram chat as shown in the screenshot below:
 ![2023_04_12_11_45_18_Mirvari_Backup_Eugene_44782_](https://user-images.githubusercontent.com/107859162/231404399-e7cfc2c9-4aac-491d-b0f6-fb8a83a47ca6.png)
+
+You can add a launch in the task scheduler, or add to cobian reflector to make it run at the end of the job.
