@@ -32,6 +32,8 @@ namespace CobianReflectorTG
 
                 SettingsBot Write = new SettingsBot();
                 Write.CryptBot(StringApi, StringId);
+
+                ErrCheck();
             }
         }
 
@@ -43,13 +45,29 @@ namespace CobianReflectorTG
             string PathLogTemp = "C:\\Program Files\\Cobian Reflector\\Logs\\temp\\";
 
             //Create temp directory if not exist
-            Directory.CreateDirectory(PathLogTemp);
+            try
+            {
+                Directory.CreateDirectory(PathLogTemp);
+            }
+            catch
+            {
+                Console.WriteLine("Folder access denied: C:\\Program Files\\Cobian Reflector\\Logs");
+                Console.ReadKey();
+            }
 
             //If log file exists, copy file and find errors
             if (File.Exists(LogFile))
             {
-                //Copy opened file to temp directory
-                File.Copy(LogFile, LogFileTemp, true);
+                try
+                {
+                    //Copy opened file to temp directory
+                    File.Copy(LogFile, LogFileTemp, true);
+                }
+                catch
+                {
+                    Console.WriteLine("Folder access denied: C:\\Program Files\\Cobian Reflector\\Logs");
+                    Console.ReadKey();
+                }
 
                 //Read file and find errors
                 string fileContent = File.ReadAllText(LogFileTemp);
@@ -101,13 +119,45 @@ namespace CobianReflectorTG
             string string1 = decryptBot.DecryptedString1;
             string string2 = decryptBot.DecryptedString2;
 
-            string externalIp = GetExternalIp();
-            string VarData = "Cobian Reflector Error⚠️" + "\n" + "User: " + Environment.UserName + "\n" + "Computer: " + Environment.MachineName + "\n" + "Time: " + DateTime.Now + "\n" + "Ip-Adress: " + externalIp + "\n" + hdd() + "\n" + "Error found: " + ErrorCount + "\n" + "`" + ErrorDetails + "`";
-            var client = new System.Net.Http.HttpClient();
-            var url = $"https://api.telegram.org/bot{string1}/sendMessage?chat_id={string2}&parse_mode=Markdown&text={VarData}";
-            var response = await client.GetAsync(url);
-            var content = await response.Content.ReadAsStringAsync();
-            Console.WriteLine("Bot Ok");
+            if (string1 == "")
+            {
+                //Add settings and crypt to file
+                Console.WriteLine("Enter api key for telegram bot:");
+                String StringApi = Console.ReadLine();
+                Console.WriteLine("Enter chat id for telegram bot");
+                String StringId = Console.ReadLine();
+
+                SettingsBot Write = new SettingsBot();
+                Write.CryptBot(StringApi, StringId);
+            }
+
+            if (string2 == "")
+            {
+                //Add settings and crypt to file
+                Console.WriteLine("Enter api key for telegram bot:");
+                String StringApi = Console.ReadLine();
+                Console.WriteLine("Enter chat id for telegram bot");
+                String StringId = Console.ReadLine();
+
+                SettingsBot Write = new SettingsBot();
+                Write.CryptBot(StringApi, StringId);
+            }
+
+            try
+            {
+                string externalIp = GetExternalIp();
+                string VarData = "Cobian Reflector Error⚠️" + "\n" + "User: " + Environment.UserName + "\n" + "Computer: " + Environment.MachineName + "\n" + "Time: " + DateTime.Now + "\n" + "Ip-Adress: " + externalIp + "\n" + hdd() + "\n" + "Error found: " + ErrorCount + "\n" + "`" + ErrorDetails + "`";
+                var client = new System.Net.Http.HttpClient();
+                var url = $"https://api.telegram.org/bot{string1}/sendMessage?chat_id={string2}&parse_mode=Markdown&text={VarData}";
+                var response = await client.GetAsync(url);
+                var content = await response.Content.ReadAsStringAsync();
+                Console.WriteLine("Bot Ok");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Bot Error" + ex);
+                Console.ReadKey();
+            }
         }
 
         public static string GetExternalIp()
