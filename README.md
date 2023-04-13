@@ -4,21 +4,16 @@ This is a console program for Windows, that is used to send notifications to tel
 
 [Release For Windows](https://github.com/e-gaydarzhi-2077/Cobian_Reflector_Telegram/releases)
 
-Example:
-![image](https://user-images.githubusercontent.com/107859162/191241057-3c8876c5-0f69-46f4-9ca4-7f549bf2250c.png)
+After update 1.3, the api key and chat id are now encrypted.
 
-After you have downloaded and extracted the files, you need to modify the ```CobianReflectorTG.cfg``` file
-Line 0 is the bot's api token
-Line 1 is the group id
-(Note the group id is written with a - sign)
-(Id of personal correspondence is written without this sig)
+Application launch example:
+You need to run it, specify api key and chat id
 
-Example:
-![image](https://user-images.githubusercontent.com/107859162/191242438-9e199706-2d0d-414f-a027-6194cc7894e1.png)
+![2023-04-12 11_36_09-Temp](https://user-images.githubusercontent.com/107859162/231405590-566a499c-4e98-4ba0-8a63-f54955e35b7f.png)
 
-Then add a finishing action (To the last task)
-Run ```CobianReflectorTG.exe```
 
-Example:
-![image](https://user-images.githubusercontent.com/107859162/191242909-678be467-401b-496d-b97f-4ecd154c53d7.png)
+After the application finishes its work on finding errors,
+a notification should come to your telegram chat as shown in the screenshot below:
+![2023_04_12_11_45_18_Mirvari_Backup_Eugene_44782_](https://user-images.githubusercontent.com/107859162/231404399-e7cfc2c9-4aac-491d-b0f6-fb8a83a47ca6.png)
 
+You can add a launch in the task scheduler, or add to cobian reflector to make it run at the end of the job.
