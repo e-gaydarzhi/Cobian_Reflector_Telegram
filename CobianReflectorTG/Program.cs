@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CobianReflectorTG
@@ -12,8 +13,12 @@ namespace CobianReflectorTG
     {
         public static void Main()
         {
-            //Check Settings
-            BotSettings();
+            Task[] tasks = new Task[1];
+            tasks[0] = Task.Run(() =>
+            {
+                BotSettings();
+            });
+            Task.WaitAll(tasks);
         }
 
         public static void BotSettings()
@@ -32,6 +37,9 @@ namespace CobianReflectorTG
 
                 SettingsBot Write = new SettingsBot();
                 Write.CryptBot(StringApi, StringId);
+
+                CheckBot Check = new CheckBot();
+                Task.Run(async () => await Check.CheckBotMethod()).Wait();
 
                 ErrCheck();
             }
