@@ -23,7 +23,9 @@ namespace CobianReflectorTG
 
         public static void BotSettings()
         {
-            if (File.Exists("BotSettings.txt"))
+            string DirExe = System.Reflection.Assembly.GetExecutingAssembly().Location;
+
+            if (File.Exists(Path.GetDirectoryName(DirExe) + "\\BotSettings.txt"))
             {
                 ErrCheck();
             }
@@ -159,7 +161,7 @@ namespace CobianReflectorTG
                 var url = $"https://api.telegram.org/bot{string1}/sendMessage?chat_id={string2}&parse_mode=Markdown&text={VarData}";
                 var response = await client.GetAsync(url);
                 var content = await response.Content.ReadAsStringAsync();
-                Console.WriteLine("Bot Ok");
+                Console.WriteLine("Bot send successfully");
             }
             catch (Exception ex)
             {

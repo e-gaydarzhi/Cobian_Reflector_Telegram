@@ -8,12 +8,15 @@ namespace CobianReflectorTG
     {
         public string DecryptedString1 { get; private set; }
         public string DecryptedString2 { get; private set; }
+        public string DirExe = System.Reflection.Assembly.GetExecutingAssembly().Location;
 
         public void CryptBot(string StringApi, string StringId)
         {
+            
+
             string encryptedString1 = EncryptString(Environment.MachineName.ToString(), StringApi);
             string encryptedString2 = EncryptString(Environment.MachineName.ToString(), StringId);
-            using (StreamWriter writer = new StreamWriter("BotSettings.txt"))
+            using (StreamWriter writer = new StreamWriter(Path.GetDirectoryName(DirExe) + "\\BotSettings.txt"))
             {
                 writer.WriteLine(encryptedString1);
                 writer.WriteLine(encryptedString2);
@@ -35,7 +38,7 @@ namespace CobianReflectorTG
 
         public void Decrypt()
         {
-            string[] encryptedStrings = File.ReadAllLines("BotSettings.txt");
+            string[] encryptedStrings = File.ReadAllLines(Path.GetDirectoryName(DirExe) + "\\BotSettings.txt");
             DecryptedString1 = DecryptString(Environment.MachineName.ToString(), encryptedStrings[0]);
             DecryptedString2 = DecryptString(Environment.MachineName.ToString(), encryptedStrings[1]);
         }
