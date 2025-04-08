@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Theme-Dark-000000?style=for-the-badge&logo=windows&logoColor=white">
 </p>
-
+<div align="center">
 <pre align="center">
 <pre style="font-size:8px; line-height:1.2;">
  ██████╗ ██████╗ ██████╗ ██╗ █████╗ ███╗   ██╗    ██████╗ ███████╗███████╗██╗     ███████╗ ██████╗████████╗ ██████╗ ██████╗ 
@@ -21,7 +21,7 @@
                                                                                                                             
                                                                                                                                                                               
 </pre>
-
+</div>
 <h2 align="center">Cobian Reflector Telegram</h2>
 
 >  Console utility to send Telegram alerts for failed backups  
