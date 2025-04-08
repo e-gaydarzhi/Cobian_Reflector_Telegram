@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C569039-59F6-4A41-8485-783CEF60F184}|CobianReflectorTG\\CobianReflectorTG.csproj|d:\\work\\visualstudio\\cobian_reflector_telegram\\cobianreflectortg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C569039-59F6-4A41-8485-783CEF60F184}|CobianReflectorTG\\CobianReflectorTG.csproj|solutionrelative:cobianreflectortg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C569039-59F6-4A41-8485-783CEF60F184}|CobianReflectorTG\\CobianReflectorTG.csproj|D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\cobianreflectortg\\settingsbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C569039-59F6-4A41-8485-783CEF60F184}|CobianReflectorTG\\CobianReflectorTG.csproj|solutionrelative:cobianreflectortg\\settingsbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C569039-59F6-4A41-8485-783CEF60F184}|CobianReflectorTG\\CobianReflectorTG.csproj|D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\cobianreflectortg\\checkbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C569039-59F6-4A41-8485-783CEF60F184}|CobianReflectorTG\\CobianReflectorTG.csproj|solutionrelative:cobianreflectortg\\checkbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CheckBot.cs",
+              "DocumentMoniker": "D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\CobianReflectorTG\\CheckBot.cs",
+              "RelativeDocumentMoniker": "CobianReflectorTG\\CheckBot.cs",
+              "ToolTip": "D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\CobianReflectorTG\\CheckBot.cs",
+              "RelativeToolTip": "CobianReflectorTG\\CheckBot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:26:38.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SettingsBot.cs",
+              "DocumentMoniker": "D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\CobianReflectorTG\\SettingsBot.cs",
+              "RelativeDocumentMoniker": "CobianReflectorTG\\SettingsBot.cs",
+              "ToolTip": "D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\CobianReflectorTG\\SettingsBot.cs",
+              "RelativeToolTip": "CobianReflectorTG\\SettingsBot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T10:56:08.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\CobianReflectorTG\\Program.cs",
+              "RelativeDocumentMoniker": "CobianReflectorTG\\Program.cs",
+              "ToolTip": "D:\\Work\\VisualStudio\\Cobian_Reflector_Telegram\\CobianReflectorTG\\Program.cs",
+              "RelativeToolTip": "CobianReflectorTG\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T12:03:27.491Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 311,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

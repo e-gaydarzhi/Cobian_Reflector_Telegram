@@ -4,3 +4,17 @@ D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\bin\D
 D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Debug\CobianReflectorTG.csproj.CoreCompileInputs.cache
 D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Debug\CobianReflectorTG.exe
 D:\Work\VisualStudio\CobianReflectorTG\CobianReflectorTG\CobianReflectorTG\obj\Debug\CobianReflectorTG.pdb
+D:\Work\Visual Studio\Cobian_Reflector_Telegram\CobianReflectorTG\bin\Debug\CobianReflectorTG.exe.config
+D:\Work\Visual Studio\Cobian_Reflector_Telegram\CobianReflectorTG\bin\Debug\CobianReflectorTG.exe
+D:\Work\Visual Studio\Cobian_Reflector_Telegram\CobianReflectorTG\bin\Debug\CobianReflectorTG.pdb
+D:\Work\Visual Studio\Cobian_Reflector_Telegram\CobianReflectorTG\obj\Debug\CobianReflectorTG.csproj.AssemblyReference.cache
+D:\Work\Visual Studio\Cobian_Reflector_Telegram\CobianReflectorTG\obj\Debug\CobianReflectorTG.csproj.CoreCompileInputs.cache
+D:\Work\Visual Studio\Cobian_Reflector_Telegram\CobianReflectorTG\obj\Debug\CobianReflectorTG.exe
+D:\Work\Visual Studio\Cobian_Reflector_Telegram\CobianReflectorTG\obj\Debug\CobianReflectorTG.pdb
+D:\Work\VisualStudio\Cobian_Reflector_Telegram\CobianReflectorTG\bin\Debug\CobianReflectorTG.exe.config
+D:\Work\VisualStudio\Cobian_Reflector_Telegram\CobianReflectorTG\bin\Debug\CobianReflectorTG.exe
+D:\Work\VisualStudio\Cobian_Reflector_Telegram\CobianReflectorTG\bin\Debug\CobianReflectorTG.pdb
+D:\Work\VisualStudio\Cobian_Reflector_Telegram\CobianReflectorTG\obj\Debug\CobianReflectorTG.csproj.AssemblyReference.cache
+D:\Work\VisualStudio\Cobian_Reflector_Telegram\CobianReflectorTG\obj\Debug\CobianReflectorTG.csproj.CoreCompileInputs.cache
+D:\Work\VisualStudio\Cobian_Reflector_Telegram\CobianReflectorTG\obj\Debug\CobianReflectorTG.exe
+D:\Work\VisualStudio\Cobian_Reflector_Telegram\CobianReflectorTG\obj\Debug\CobianReflectorTG.pdb
