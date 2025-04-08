@@ -2,9 +2,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Theme-Dark-000000?style=for-the-badge&logo=windows&logoColor=white">
 </p>
-<div align="center" style="font-size:8px; line-height:1.2;">
-<pre align="center">
 
+<pre align="center">
+<pre style="font-size:8px; line-height:1.2;">
  ██████╗ ██████╗ ██████╗ ██╗ █████╗ ███╗   ██╗    ██████╗ ███████╗███████╗██╗     ███████╗ ██████╗████████╗ ██████╗ ██████╗ 
 ██╔════╝██╔═══██╗██╔══██╗██║██╔══██╗████╗  ██║    ██╔══██╗██╔════╝██╔════╝██║     ██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
 ██║     ██║   ██║██████╔╝██║███████║██╔██╗ ██║    ██████╔╝█████╗  █████╗  ██║     █████╗  ██║        ██║   ██║   ██║██████╔╝
